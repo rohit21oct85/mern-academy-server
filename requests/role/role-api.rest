@@ -1,0 +1,10 @@
+### Create Testimonial ###
+POST http://localhost:8080/api/role/create 
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNDdmODE5NzM3OGNkMTBjMDk4NDRjOCIsInJvbGUiOjEsImlhdCI6MTYzMjEwNjUzMywiZXhwIjoxNjM0Njk4NTMzfQ.yV3OrIk4KdQJyInFL31M0fnWDP75JgsDIRHmYTp-GeA
+
+{
+      "role_id":2,
+      "role_name":"Sub Admin",
+      "role_slug":"sub-admin"
+}

@@ -1,0 +1,11 @@
+### Create App Module ###
+POST http://localhost:8080/api/app-module/create 
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNDdmODE5NzM3OGNkMTBjMDk4NDRjOCIsInJvbGUiOjEsImlhdCI6MTYzMjEwNjUzMywiZXhwIjoxNjM0Njk4NTMzfQ.yV3OrIk4KdQJyInFL31M0fnWDP75JgsDIRHmYTp-GeA
+
+{
+      "module_name":"Manage Units",
+      "module_slug":"manage-units",
+      "module_type":"super-admin",
+      "module_sequence":"1"
+}

@@ -1,0 +1,9 @@
+MONGO_USERNAME=mern-root-user
+MONGO_PASSWORD=THk9KWOLqsvOpO4K
+MONGO_HOST=mernacademycluster.gi0qf.mongodb.net
+MONGO_DATABASE=mernacademy
+SERVER_PORT=8080
+
+
+
+MONGODB_URL=mongodb+srv://mern-root-user:THk9KWOLqsvOpO4K@mernacademycluster.gi0qf.mongodb.net/mernacademy?retryWrites=true&w=majority

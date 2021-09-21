@@ -1,0 +1,19 @@
+### Create Role Module ###
+POST http://localhost:8080/api/role-module/create 
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNDdmODE5NzM3OGNkMTBjMDk4NDRjOCIsInJvbGUiOjEsImlhdCI6MTYzMjEwNjUzMywiZXhwIjoxNjM0Njk4NTMzfQ.yV3OrIk4KdQJyInFL31M0fnWDP75JgsDIRHmYTp-GeA
+
+{
+      "email":"rohit21oct85@gmail.com",
+      "module_name":"Manage Units",
+      "module_slug":"manage-units",
+      "role_slug":"super-admin",
+      "module_icon":"fa fa-gear"
+}
+
+### View Role Slug ###
+GET http://localhost:8080/api/role-module/view/super-admin/rohit21oct85@gmail.com 
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNDdmODE5NzM3OGNkMTBjMDk4NDRjOCIsInJvbGUiOjEsImlhdCI6MTYzMjEwNjUzMywiZXhwIjoxNjM0Njk4NTMzfQ.yV3OrIk4KdQJyInFL31M0fnWDP75JgsDIRHmYTp-GeA
+
+
