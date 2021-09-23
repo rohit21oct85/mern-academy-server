@@ -11,6 +11,18 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNDdmODE5N
       "module_icon":"fa fa-gear"
 }
 
+### Update Role Module ###
+PATCH http://localhost:8080/api/role-module/update/6149567d3c27193618d86f6a 
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNDdmODE5NzM3OGNkMTBjMDk4NDRjOCIsInJvbGUiOjEsImlhdCI6MTYzMjEwNjUzMywiZXhwIjoxNjM0Njk4NTMzfQ.yV3OrIk4KdQJyInFL31M0fnWDP75JgsDIRHmYTp-GeA
+
+{
+      "module_icon":"fa fa-bars text-warning"
+}
+
+
+
+
 ### View Role Slug ###
 GET http://localhost:8080/api/role-module/view/super-admin/rohit21oct85@gmail.com 
 Content-Type: application/json
