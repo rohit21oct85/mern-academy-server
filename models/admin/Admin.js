@@ -2,45 +2,45 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 
 const AdminSchema = new mongoose.Schema({
-      fullname: {
-            type: String,
-            required: true,
-      },
-      email: {
-            type: String,
-            required: true,
-            unique: true,
-      },
-      password: {
-            type: String,
-            required: true,
-            trim: true
-      },
-      role:{
-            type: Number,
-            default: 1
-      },
-      role_name:{
-            type: String,
-            default: 'Super Admin'
-      },
-      role_slug:{
-            type: String,
-            default: 'super-admin'
-      },
-      status:{
-        type: Boolean,
-        required: true,
-        default: true
-      },
-      isActive:{
+        fullname: {
+                type: String,
+                required: true,
+        },
+        email: {
+                type: String,
+                required: true,
+                unique: true,
+        },
+        password: {
+                type: String,
+                required: true,
+                trim: true
+        },
+        role:{
+                type: Number,
+                default: 1
+        },
+        role_name:{
+                type: String,
+                default: 'Super Admin'
+        },
+        role_slug:{
+                type: String,
+                default: 'super-admin'
+        },
+        status:{
             type: Boolean,
-            default: false
-      },
-      created_at: {
-            type: Date,
-            default: Date.now
-      }
+            required: true,
+            default: true
+        },
+        isActive:{
+                type: Boolean,
+                default: false
+        },
+        created_at: {
+                type: Date,
+                default: Date.now
+        }
 });
 
 AdminSchema.pre('save', function(next) {

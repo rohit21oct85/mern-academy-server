@@ -1,5 +1,5 @@
 ### Create Admin ###
-POST http://localhost:8080/api/admin/register 
+POST http://localhost:5000/api/admin/register 
 Content-Type: application/json
 
 {
@@ -9,7 +9,7 @@ Content-Type: application/json
 }
 
 ### Login Admin ###
-POST http://localhost:8080/api/admin/login 
+POST http://localhost:5000/api/admin/login 
 Content-Type: application/json
 
 {
@@ -17,14 +17,14 @@ Content-Type: application/json
       "password":"password"
 }
 ### Admin Logout ###
-POST http://localhost:8080/api/admin/logout
+POST http://localhost:5000/api/admin/logout
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNDdmODE5NzM3OGNkMTBjMDk4NDRjOCIsInJvbGUiOjEsImlhdCI6MTYzMjEwNjUzMywiZXhwIjoxNjM0Njk4NTMzfQ.yV3OrIk4KdQJyInFL31M0fnWDP75JgsDIRHmYTp-GeA
 
 
 
 ### Admin Logout ###
-GET http://localhost:8080/api/admin/admin-logout/rohit21oct85@gmail.com
+GET http://localhost:5000/api/admin/admin-logout/rohit21oct85@gmail.com
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNDdmODE5NzM3OGNkMTBjMDk4NDRjOCIsInJvbGUiOjEsImlhdCI6MTYzMjEwNjUzMywiZXhwIjoxNjM0Njk4NTMzfQ.yV3OrIk4KdQJyInFL31M0fnWDP75JgsDIRHmYTp-GeA
 
