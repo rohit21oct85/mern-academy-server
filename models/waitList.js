@@ -14,13 +14,19 @@ const waitListSchema = new mongoose.Schema({
             type: String,
             required: true
       },
-      completed_year: {
+      completedYear: {
             type: Number,
       },
-      own_laptop: {
+      ownLaptop: {
             type: Boolean,
       },
       type: {
+            type: String,
+      },
+      totalExperience: {
+            type: String,
+      },
+      MasterIn: {
             type: String,
       },
 
