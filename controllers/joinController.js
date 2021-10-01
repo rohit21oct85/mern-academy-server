@@ -29,7 +29,7 @@ const postWaitList = async (req, res, next) => {
 const getWaitList = async (req, res, next) => {
       try {
            
-            const waitLists = await waitList.find({active: active});
+            const waitLists = await waitList.find();
             res.json({
                   status: res.statusCode,
                   data: waitLists
