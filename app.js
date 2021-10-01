@@ -33,8 +33,9 @@ mongoose.connect(config.mongo.url, config.mongo.options)
 /** RoutesList */
 
 app.get('/', (req, res) => {
+      let date = new Date();
       res.send({
-            message: `OK Testing, Success. Server Running.`
+            message: `OK Testing, Success. Server Running from ${date}`
       })
 })
 
