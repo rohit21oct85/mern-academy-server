@@ -39,7 +39,7 @@ app.get('/', (req, res) => {
 })
 app.get('/api/test', (req, res) => {
       res.send({
-            message: `OK Testing Server Runnings PID ${process.pid} and PORT ${process.env.SERVER_PORT}`
+            message: `OK Testing Server Runnings PID ${process.pid} and PORT ${process.env.PORT}`
       })
 })
 
