@@ -34,12 +34,7 @@ mongoose.connect(config.mongo.url, config.mongo.options)
 
 app.get('/', (req, res) => {
       res.send({
-            message: "Server Runnings"
-      })
-})
-app.get('/api/test', (req, res) => {
-      res.send({
-            message: `OK Testing Server Runnings PID ${process.pid} and PORT ${process.env.PORT}`
+            message: `OK Testing, Success. Server Running.`
       })
 })
 
@@ -48,5 +43,10 @@ app.use("/api/admin", Routes.adminAuthRoute);
 app.use("/api/app-module", Routes.appModuleRoutes);
 app.use("/api/role-module", Routes.roleModuleRoutes);
 app.use("/api/role-permission", Routes.rolePermissionRoutes);
+
+
+// web routes
+
+app.use("/api/join", Routes.joinRoutes)
 
 module.exports = app

@@ -1,29 +1,31 @@
 
 const mongoose = require('mongoose')
 
-const TestimonialSchema = new mongoose.Schema({
-      photo: {
-            type: String
-      },
-      name: {
+const waitListSchema = new mongoose.Schema({
+      full_name: {
             type: String,
             required: true
       },
-      post: {
+      whatsapp: {
             type: String,
             required: true
       },
-      description: {
+      email: {
             type: String,
             required: true
       },
-      active: {
+      completed_year: {
             type: Number,
-            default: 1,
+      },
+      own_laptop: {
+            type: Boolean,
+      },
+      type: {
+            type: String,
       },
 
 },{
       timestamps: true
 });
 
-module.exports = mongoose.model('Testimonial', TestimonialSchema);
+module.exports = mongoose.model('waitList', waitListSchema);
